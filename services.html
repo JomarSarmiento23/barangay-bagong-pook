@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Barangay Bagong Pook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <img src="logo (2).jpg" alt="Barangay Logo" class="logo">
+        <ul class="main-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><button onclick="openNewsletter()">Subscribe to Newsletter</button></li>
+        </ul>
+    </nav>
+
+    <!-- Services Content -->
+    <div class="services">
+        <h1>Our Services</h1>
+        <p>Barangay Bagong Pook is committed to providing a variety of essential services to support our residents. Below are some of the main services we offer:</p>
+
+        <h2>Health and Wellness</h2>
+        <p>Our barangay provides regular health check-ups, vaccinations, and wellness programs to ensure the well-being of all residents.</p>
+
+        <h2>Educational Programs</h2>
+        <p>We offer educational support programs, including free workshops, after-school activities, and tutoring sessions for students.</p>
+
+        <h2>Livelihood Assistance</h2>
+        <p>To help improve economic conditions, we offer livelihood and skills training programs to empower residents and foster self-sufficiency.</p>
+
+        <h2>Environmental Initiatives</h2>
+        <p>Barangay Bagong Pook actively promotes recycling, clean-up drives, and tree-planting activities to keep our community green and clean.</p>
+
+        <h2>Community Events</h2>
+        <p>We regularly organize events like sports leagues, cultural celebrations, and town hall meetings to encourage community bonding and engagement.</p>
+    </div>
+
+    <!-- JavaScript for Popup -->
+    <script>
+        function openNewsletter() {
+            document.getElementById('newsletterPopup').style.display = 'block';
+        }
+        function closeNewsletter() {
+            document.getElementById('newsletterPopup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

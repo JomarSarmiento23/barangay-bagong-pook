@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Barangay Bagong Pook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <img src="logo (2).jpg" alt="Barangay Logo" class="logo">
+        <ul class="main-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><button onclick="openNewsletter()">Subscribe to Newsletter</button></li>
+        </ul>
+    </nav>
+    
+
+    <!-- About Us Content -->
+    <div class="about-us">
+        <h1>About Barangay Bagong Pook</h1>
+        <p>Barangay Bagong Pook is a vibrant community located in San Pablo City. Our barangay is committed to serving our residents through quality public service, community programs, and sustainable initiatives. Guided by principles of unity, respect, and inclusivity, we strive to create a safe, nurturing environment for everyone in our community.</p>
+        
+        <h2>Our Vision</h2>
+        <p>To be a model barangay that embodies resilience, progress, and strong community values, providing a foundation for all residents to thrive and succeed.</p>
+
+        <h2>Our Mission</h2>
+        <p>Our mission is to empower the residents of Barangay Bagong Pook through accessible services, educational programs, and sustainable development efforts. We are dedicated to fostering a supportive and inclusive environment where everyone feels valued and has the opportunity to grow.</p>
+
+        <h2>Core Values</h2>
+        <ul>
+            <li><strong>Integrity:</strong> We uphold transparency and accountability in all of our actions and decisions.</li>
+            <li><strong>Unity:</strong> We believe in the strength of a united community working towards common goals.</li>
+            <li><strong>Service:</strong> We are committed to providing efficient, responsive, and inclusive services to all residents.</li>
+            <li><strong>Respect:</strong> We foster an environment of mutual respect, valuing each individual’s contributions to the community.</li>
+        </ul>
+
+        <h2>Community Services and Initiatives</h2>
+        <p>Barangay Bagong Pook offers a variety of services and programs to improve the quality of life for our residents, including:</p>
+        <ul>
+            <li>Health and wellness programs</li>
+            <li>Educational support and scholarship opportunities</li>
+            <li>Livelihood and skills training initiatives</li>
+            <li>Environmental conservation projects</li>
+            <li>Community events and cultural celebrations</li>
+        </ul>
+    </div>
+
+    <!-- JavaScript for Popup -->
+    <script>
+        function openNewsletter() {
+            document.getElementById('newsletterPopup').style.display = 'flex';
+        }
+        function closeNewsletter() {
+            document.getElementById('newsletterPopup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

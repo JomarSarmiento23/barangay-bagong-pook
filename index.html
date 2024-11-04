@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barangay Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar in index.html -->
+    <nav>
+        <img src="logo (2).jpg" alt="Barangay Logo" class="logo">
+        <ul class="main-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><button onclick="openNewsletter()">Subscribe to Newsletter</button></li>
+        </ul>
+    </nav>
+    
+    <!-- Homepage Content -->
+    <div class="homepage">
+        <h1>Welcome to Barangay Bagong Pook</h1>
+        <p>Our barangay is dedicated to serving the community. Stay connected with us through updates on services, announcements, and more.</p>
+    </div>
+
+    <!-- Newsletter Pop-up -->
+<div id="newsletterPopup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closeNewsletter()">&times;</span>
+        <h2>Subscribe to Our Newsletter</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+    <!-- JavaScript for Popup -->
+    <script>
+       function openNewsletter() {
+    document.getElementById('newsletterPopup').style.display = 'flex';
+}
+function closeNewsletter() {
+    document.getElementById('newsletterPopup').style.display = 'none';
+}
+
+    </script>
+</body>
+</html>
